@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="350" height="200" viewBox="0 0 350 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="cardGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f0fdf4;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16a34a;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#000000" flood-opacity="0.1"/>
+    </filter>
+  </defs>
+  
+  <!-- Card Background -->
+  <rect x="10" y="10" width="330" height="180" rx="12" fill="url(#cardGradient)" stroke="#22c55e" stroke-width="2" filter="url(#shadow)"/>
+  
+  <!-- Header -->
+  <g id="header" transform="translate(30, 30)">
+    <circle cx="0" cy="0" r="10" fill="url(#iconGradient)"/>
+    <!-- Trending up icon -->
+    <path d="M -4 4 L 0 0 L 4 4 M 0 0 L 0 -4" stroke="white" stroke-width="2" fill="none"/>
+    <text x="20" y="5" font-family="Inter, system-ui, sans-serif" font-size="14" font-weight="600" fill="#1e293b">Key Insights</text>
+  </g>
+  
+  <!-- Insights List -->
+  <g id="insights-list" transform="translate(30, 60)">
+    <!-- Insight 1: Dairy -->
+    <g id="insight-1">
+      <circle cx="0" cy="0" r="3" fill="#22c55e"/>
+      <text x="15" y="5" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#374151">Dairy products lead in CO₂ savings</text>
+      <text x="15" y="20" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6b7280">45% of total CO₂ savings come from dairy category</text>
+    </g>
+    
+    <!-- Insight 2: Produce -->
+    <g id="insight-2" transform="translate(0, 35)">
+      <circle cx="0" cy="0" r="3" fill="#3b82f6"/>
+      <text x="15" y="5" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#374151">Produce has highest water impact</text>
+      <text x="15" y="20" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6b7280">78% of water savings from fresh produce</text>
+    </g>
+    
+    <!-- Insight 3: Donations -->
+    <g id="insight-3" transform="translate(0, 70)">
+      <circle cx="0" cy="0" r="3" fill="#f59e0b"/>
+      <text x="15" y="5" font-family="Inter, system-ui, sans-serif" font-size="12" font-weight="600" fill="#374151">Donation actions most effective</text>
+      <text x="15" y="20" font-family="Inter, system-ui, sans-serif" font-size="10" fill="#6b7280">45% of actions are donations, highest impact</text>
+    </g>
+  </g>
+  
+  <!-- Performance Indicator -->
+  <g id="performance" transform="translate(30, 160)">
+    <text x="0" y="0" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#374151">Performance Score:</text>
+    <rect x="0" y="5" width="200" height="8" rx="4" fill="#e2e8f0"/>
+    <rect x="0" y="5" width="160" height="8" rx="4" fill="#22c55e"/>
+    <text x="210" y="12" font-family="Inter, system-ui, sans-serif" font-size="10" font-weight="600" fill="#22c55e">80%</text>
+  </g>
+  
+  <!-- Decorative elements -->
+  <circle cx="50" cy="100" r="2" fill="#22c55e" opacity="0.3"/>
+  <circle cx="300" cy="120" r="1.5" fill="#3b82f6" opacity="0.3"/>
+  <circle cx="280" cy="80" r="1.5" fill="#f59e0b" opacity="0.3"/>
+</svg> 
